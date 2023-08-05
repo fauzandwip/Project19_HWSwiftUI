@@ -18,6 +18,7 @@
 		7B5673D12A7E54A9003CE63F /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B5673D02A7E54A9003CE63F /* resorts.json */; };
 		7B5673D52A7E551D003CE63F /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673D42A7E551D003CE63F /* Resort.swift */; };
 		7B5673D82A7E55A1003CE63F /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673D72A7E55A1003CE63F /* Bundle.swift */; };
+		7B5673DA2A7E6DFB003CE63F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673D92A7E6DFB003CE63F /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7B5673D02A7E54A9003CE63F /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
 		7B5673D42A7E551D003CE63F /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		7B5673D72A7E55A1003CE63F /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		7B5673D92A7E6DFB003CE63F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5673BB2A7E34B1003CE63F /* ContentView.swift */,
+				7B5673D92A7E6DFB003CE63F /* WelcomeView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				7B5673D82A7E55A1003CE63F /* Bundle.swift in Sources */,
 				7B5673BC2A7E34B1003CE63F /* ContentView.swift in Sources */,
 				7B5673D52A7E551D003CE63F /* Resort.swift in Sources */,
+				7B5673DA2A7E6DFB003CE63F /* WelcomeView.swift in Sources */,
 				7B5673BA2A7E34B1003CE63F /* SnowSeekerApp.swift in Sources */,
 				7B5673CD2A7E47D5003CE63F /* GroupView.swift in Sources */,
 				7B5673CB2A7E42A5003CE63F /* optionalsAlertSheet.swift in Sources */,
