@@ -13,6 +13,7 @@
 		7B5673C12A7E34B3003CE63F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5673C02A7E34B3003CE63F /* Preview Assets.xcassets */; };
 		7B5673C92A7E3E36003CE63F /* sideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673C82A7E3E36003CE63F /* sideView.swift */; };
 		7B5673CB2A7E42A5003CE63F /* optionalsAlertSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673CA2A7E42A5003CE63F /* optionalsAlertSheet.swift */; };
+		7B5673CD2A7E47D5003CE63F /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5673CC2A7E47D5003CE63F /* GroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7B5673C02A7E34B3003CE63F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B5673C82A7E3E36003CE63F /* sideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideView.swift; sourceTree = "<group>"; };
 		7B5673CA2A7E42A5003CE63F /* optionalsAlertSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionalsAlertSheet.swift; sourceTree = "<group>"; };
+		7B5673CC2A7E47D5003CE63F /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				7B5673C82A7E3E36003CE63F /* sideView.swift */,
 				7B5673CA2A7E42A5003CE63F /* optionalsAlertSheet.swift */,
+				7B5673CC2A7E47D5003CE63F /* GroupView.swift */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				7B5673BC2A7E34B1003CE63F /* ContentView.swift in Sources */,
 				7B5673BA2A7E34B1003CE63F /* SnowSeekerApp.swift in Sources */,
+				7B5673CD2A7E47D5003CE63F /* GroupView.swift in Sources */,
 				7B5673CB2A7E42A5003CE63F /* optionalsAlertSheet.swift in Sources */,
 				7B5673C92A7E3E36003CE63F /* sideView.swift in Sources */,
 			);
