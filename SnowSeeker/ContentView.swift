@@ -20,9 +20,19 @@ extension View {
 struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     
+    @State private var searchedText = ""
+    
+    var filteredResorts: [Resort] {
+        if searchedText.isEmpty {
+            return resorts
+        } else {
+            return resorts.filter { $0.name.localizedCaseInsensitiveContains(searchedText)}
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List(resorts) { resort in
+            List(filteredResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -47,6 +57,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Resorts")
+            .searchable(text: $searchedText, prompt: "Search for a resort")
             
             WelcomeView()
         }
