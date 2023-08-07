@@ -23,6 +23,7 @@
 		7B7591962A7F8A1200BBABE4 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7591952A7F8A1200BBABE4 /* SkiDetailsView.swift */; };
 		7B7591982A7F8BAD00BBABE4 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7591972A7F8BAD00BBABE4 /* ResortDetailsView.swift */; };
 		7B75919A2A81131C00BBABE4 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7591992A81131C00BBABE4 /* Facility.swift */; };
+		7B75919C2A81262000BBABE4 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75919B2A81262000BBABE4 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		7B7591952A7F8A1200BBABE4 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		7B7591972A7F8BAD00BBABE4 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		7B7591992A81131C00BBABE4 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		7B75919B2A81262000BBABE4 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5673B92A7E34B1003CE63F /* SnowSeekerApp.swift */,
+				7B75919B2A81262000BBABE4 /* Favorites.swift */,
 				7B5673D62A7E5592003CE63F /* Extensions */,
 				7B5673D22A7E54F0003CE63F /* Model */,
 				7B5673D32A7E54F6003CE63F /* View */,
@@ -217,6 +220,7 @@
 				7B5673CD2A7E47D5003CE63F /* GroupView.swift in Sources */,
 				7B7591942A7F87EB00BBABE4 /* ResortView.swift in Sources */,
 				7B7591962A7F8A1200BBABE4 /* SkiDetailsView.swift in Sources */,
+				7B75919C2A81262000BBABE4 /* Favorites.swift in Sources */,
 				7B5673CB2A7E42A5003CE63F /* optionalsAlertSheet.swift in Sources */,
 				7B5673C92A7E3E36003CE63F /* sideView.swift in Sources */,
 			);
