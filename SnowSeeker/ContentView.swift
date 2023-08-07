@@ -24,6 +24,11 @@ struct ContentView: View {
     
     @State private var searchedText = ""
     
+    // MARK: - Challenge 3
+    @State private var showingSortFilter = false
+    @State private var sortedAlphabet = 0
+    @State private var sortedCountry = SortingView.countries
+    
     var filteredResorts: [Resort] {
         if searchedText.isEmpty {
             return resorts
@@ -32,9 +37,20 @@ struct ContentView: View {
         }
     }
     
+    // MARK: - Challenge 3
+    var sortedResorts: [Resort] {
+        let sortedResortsCountry = filteredResorts.filter { sortedCountry.contains($0.country) }
+        
+        if sortedAlphabet == 0 {
+            return sortedResortsCountry.sorted { $0.name < $1.name }
+        } else {
+            return sortedResortsCountry.sorted { $0.name > $1.name }
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List(filteredResorts) { resort in
+            List(sortedResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -69,6 +85,16 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchedText, prompt: "Search for a resort")
+            .toolbar {
+                Button {
+                    showingSortFilter = true
+                } label: {
+                    Image(systemName: "arrow.up.arrow.down")
+                }
+            }
+            .sheet(isPresented: $showingSortFilter) {
+                SortingView(sortedAlphabet: $sortedAlphabet, sortedCountry: $sortedCountry)
+            }
             
             WelcomeView()
         }
