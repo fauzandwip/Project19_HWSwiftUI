@@ -33,6 +33,8 @@ class Favorites: ObservableObject {
     }
     
     func load() {
+        // MARK: - Challenge 2
+        
         if let data = UserDefaults.standard.data(forKey: saveKey) {
             if let decoded = try? JSONDecoder().decode(Set<String>.self, from: data) {
                 resorts = decoded
@@ -41,6 +43,8 @@ class Favorites: ObservableObject {
     }
     
     func save() {
+        // MARK: - Challenge 2
+        
         do {
             let decoded = try JSONEncoder().encode(resorts)
             UserDefaults.standard.set(decoded, forKey: saveKey)
