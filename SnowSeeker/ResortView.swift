@@ -25,6 +25,14 @@ struct ResortView: View {
                     .resizable()
                     .scaledToFit()
                 
+                // MARK: - Challenge 1
+                    .overlay(alignment: .bottomTrailing) {
+                        Text("Photo by \(resort.imageCredit)")
+                            .font(.caption)
+                            .padding(5)
+                            .background(.white.opacity(0.7))
+                    }
+ 
                 HStack {
                     if hSizeClass == .compact && typeSize > .large {
                         VStack(spacing: 10) { ResortDetailsView(resort: resort) }
