@@ -28,8 +28,9 @@ struct ResortView: View {
                 // MARK: - Challenge 1
                     .overlay(alignment: .bottomTrailing) {
                         Text("Photo by \(resort.imageCredit)")
-                            .font(.caption)
                             .padding(5)
+                            .font(.caption)
+                            .foregroundColor(.black)
                             .background(.white.opacity(0.7))
                     }
  
